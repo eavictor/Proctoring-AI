@@ -144,4 +144,3 @@ def draw_marks(image, marks, color=(0, 255, 0)):
     """
     for mark in marks:
         cv2.circle(image, (mark[0], mark[1]), 2, color, -1, cv2.LINE_AA)
-    

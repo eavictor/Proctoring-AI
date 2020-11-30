@@ -156,8 +156,7 @@ while True:
         faces = find_faces(img, face_model)
         for face in faces:
             marks = detect_marks(img, landmark_model, face)
-            print(marks[30])
-            # mark_detector.draw_marks(img, marks, color=(0, 255, 0))
+            # face_landmarks.draw_marks(img, marks, color=(0, 255, 0))
             image_points = np.array([
                                     marks[30],     # Nose tip
                                     marks[8],     # Chin
